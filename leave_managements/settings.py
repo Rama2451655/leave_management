@@ -29,8 +29,14 @@ SECRET_KEY = 'django-insecure-t_nwax^r*-n6#^hqrgucn&%b9f)l8v5=a%k@aic7m+yl^)h!a2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG =True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    "leave-management-hjhj.onrender.com",
+    "localhost",  # optional for local development
+]
 
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
 
 # Application definition
 
