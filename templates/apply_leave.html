@@ -2,7 +2,7 @@
 {% block title %}Apply Leave{% endblock %}
 {% block content %}
 <h2>Apply for Leave</h2>
-<form method="post">
+<form method="post" action="{% url 'apply_leave' %}>
   {% csrf_token %}
   {{ form.as_p }}
   <button type="submit" class="btn btn-primary">Apply</button>
