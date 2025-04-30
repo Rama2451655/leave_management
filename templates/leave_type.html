@@ -2,7 +2,7 @@
 {% block title %}Create Leave Type{% endblock %}
 {% block content %}
 <h2>Create Leave Type</h2>
-<form method="post">
+<form method="post" action="{% url 'leave_type' %}>
   {% csrf_token %}
   {{ form.as_p }}
   <button type="submit" class="btn btn-info">Add Leave Type</button>
