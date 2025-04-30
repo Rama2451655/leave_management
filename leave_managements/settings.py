@@ -9,6 +9,10 @@ https://docs.djangoproject.com/en/5.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
+CSRF_TRUSTED_ORIGINS = [
+    "https://leave-management-hjhj.onrender.com",
+]
+
 
 from pathlib import Path
 
